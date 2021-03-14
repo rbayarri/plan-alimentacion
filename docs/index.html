@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan de Alimentación</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+  <div class="container" id="contenido">
+    <div class="col-12">
+      <nav>
+        <i class="material-icons font-30" id="menu" onclick="changeButton()">menu</i>
+        <ul id="navbar"> 
+          <li class="nav-item desayuno"><a class="nav-link font-15 color-white block bold pad-15" href="#desayuno" onclick="changeButton()">Desayuno</a></li>
+          <li class="nav-item colacion"><a class="nav-link font-15 color-white block bold pad-15" href="#colacion" onclick="changeButton()">Colación</a></li>
+          <li class="nav-item almuerzo"><a class="nav-link font-15 color-white block bold pad-15" href="#almuerzo" onclick="changeButton()">Almuerzo</a></li>
+          <li class="nav-item cena"><a class="nav-link font-15 color-white block bold pad-15" href="#cena" onclick="changeButton()">Cena</a></li>
+          <li class="nav-item prohibidos"><a class="nav-link font-15 color-white block bold pad-15" href="#prohibidos" onclick="changeButton()">Prohibidos</a></li>
+        </ul>
+      </nav>
+      <header>
+        <h1>plan de alimentación saludable</h1>
+        <img src="img/dieta.jpg" alt="dieta">
+      </header>
+      <main>
+        <section id="desayuno" class="col-12" >
+          <h2>Desayuno y Merienda</h2>
+          <ul class="mar-bot-25">
+            <li>Infusión de té, café , mate, yerbeado o hierbas <b>sin azúcar, con edulcorante</b></li>
+            <li>Taza de leche descremada o yogurt diet</li>
+          </ul>
+          <div class="col-6">
+            <img src="img/desayuno.jpg" alt="" class="">
+          </div>
+          <div class="col-6">
+            <p class="pad-left-20"><b class="underline">Opciones de panificados </b>(elegir una alternativa por día)</p>
+            <ul class="mar-top-15 pad-left-30">
+              <li>Pan integral - 1 puño</li>
+              <li>Discos de arroz - 4 unidades</li>
+              <li>Galletas con salvado - 5 unidades</li>
+              <li>Galletas de agua - 5 unidades</li>
+              <li>Tostadas integrales - 5 unidades</li>
+              <li>Galletas semidulces de vainilla sin relleno - 5 unidades</li>
+              <li>Copos de cereales sin azúcar - 1 taza</li>
+              <li>Pan de molde integral diet - 2 rebanadas finas</li>
+            </ul>
+          </div>
+        </section>
+        <section id="colacion" class="col-12">
+          <h2>Colación Media Mañana - Media Tarde</h2>
+          <div class="col-6">
+            <ul class="mar-bot-25">
+              <li>Infusiones con edulcorante</li>
+              <li>Caldos de verduras sin grasa</li>
+            </ul>
+            <p><b class="underline">Opciones</b></p>
+            <ul class="mar-top-15 pad-right-10">
+              <li>Tutuca</li>
+              <li>Barra de cereales light</li>
+              <li>Fruta</li>
+              <li>Yogurt diet</li>
+              <li>Taza de copos de cereales sin azúcar, solos o con leche o yogurt</li>
+              <li>Taza de pororó sin azúcar</li>
+              <li>Turrón</li>
+              <li>Galletas de arroz</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <img src="img/colacion.jpg" alt="">
+          </div>
+        </section>
+        <section id="almuerzo" class="col-12">
+          <h2>Almuerzo</h2>
+          <div class="col-6">
+            <img src="img/almuerzo.jpg" alt="" class="rounded h-400">
+          </div>
+
+          <div class="col-6">
+            <h3>Principal</h3>
+            <ul>
+              <li>Caldo de verduras (sin hueso, sin carne, sin agregados de fideos, etc)</li>
+              <li>1 mano de carne (vacuna, ullo sin piel, hígado, corazón, mondongo, pescado fresco o en lata, jamón o paleta cocidas)</li>
+              <li>2 puños de verduras o ensaladas crudas o cocidas con poco aceite</li>
+              <li>Elegir entre:
+                <ul class="mar-left-20 mar-bot-25">
+                  <li>Un puño de papa, arroz, fideos, semola o legumbres</li>
+                  <li>Una porción pizza, tarta de acelga o jamón y queso o empanada de acelga o de jamón y queso (4 o 5 veces por semana)</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="col-6 col-6-2">
+              <h3>Postres</h3>
+              <ul>
+                <li>Fruta</li>
+                <li>Postre diet</li>
+                <li>Gelatina diet</li>
+                <li>Helado diet</li>
+              </ul>
+            </div>
+            <div class="col-6 col-6-2">
+              <h3>Bebidas</h3> 
+              <ul>
+                <li>Agua</li>
+                <li>Soda</li>
+                <li>Jugos</li>
+                <li>Gaseosas dietéticas</li>
+                <li>Agua saborizada diet</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="cena" class="col-12">
+          <h2>Cena</h2>
+          <div class="col-6">
+            <ol class="mar-top-20">
+              <li>
+                <ul class="mar-left-20">
+                  <li>Caldo de verduras con o sin agregados de fideos, avena, etc</li>
+                  <li>Plato grande de verduras o ensaladas (excepto papa)</li>
+                  <li>Huevo ( 2 o 3 veces por semana), un trozo de queso o palma de carne magra</li>
+                  <li>Fruta</li>
+                </ul>
+              </li>
+              <li>Igual desayuno</li>
+            </ol>
+          </div>
+          <div class="col-6">
+            <img src="img/cena.jpg" alt="" class="h-300">
+          </div>
+        </section>
+        <section id="prohibidos" class="col-12">
+          <h2>No consumir</h2>
+          <img src="img/prohibido.jpg" alt="" height="80px">
+          <div class="col-4">
+            <ul>
+              <li>Alfajores</li>
+              <li>Carnes con hueso</li>
+              <li>Cerveza</li>  
+              <li>Chizitos</li>
+              <li>Chorizos</li>
+              <li>Conitos</li>
+              <li>Cremas</li>
+              <li>Empanadas de carne</li>
+              <li>Estofados con frituras</li>
+              <li>Facturas</li>
+              <li>Galletas dulces</li>
+              <li>Gaseosas comunes</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>Guisos</li>
+              <li>Jaleas</li>
+              <li>Jugos con azúcar</li>
+              <li>Jugos envasados</li>
+              <li>Manies</li>
+              <li>Manteca</li>
+              <li>Margarina</li>
+              <li>Mayonesa</li>
+              <li>Mermeladas o dulces comunes</li>
+              <li>Miel</li>
+              <li>Otras achuras</li>
+              <li>Otros fiambres</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>Palitos salados</li>
+              <li>Pan casero</li>
+              <li>Papas</li>
+              <li>Papas fritas</li>
+              <li>Pastas rellenas</li>
+              <li>Picadillo</li>
+              <li>Salame</li>
+              <li>Sopaipillas</li>
+              <li>Tortitas</li>
+              <li>Vino</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <div class="container-full" id="footer">
+    <footer class="float-left mar-top-25 col-12">
+      <div class="container">
+        <p class="pad-top-20 pad-bot-20 float-right pad-right-20 font-12">Desarrollado por Renzo Bayarri.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="index2.js"></script>
+</body>
+</html>
